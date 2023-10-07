@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor de Texto v2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------Css links------------------------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!------------------------Container------------------------->
+    <main class="container">
+        <h1>Tradutor v2.0</h1>
+        <div class="select-field">
+            <select class="select-from"></select>
+            <select class="select-to"></select>
+        </div><!--end select field-->
+        <div class="textarea-field">
+            <div class="textarea-box">
+                <textarea id="textarea-from" placeholder="Digitar texto" cols="30" rows="10"></textarea>
+                <i class="bx bx-x" title="Limpar texto" id="clear-button"></i>
+            </div><!--end text area box-->
+            <div class="textarea-box">
+                <textarea id="textarea-to" placeholder="Tradução" disabled cols="30" rows="10"></textarea>
+                <i class="bx bxs-volume-full" title="Ouvir" id="listen-button"></i>
+                <i class="bx bxs-copy" title="Copiar" id="copy-button"></i>
+            </div><!--end text area box-->
+        </div><!--end text area field-->
+        <button type="button" id="translate-button">Traduzir</button>
+    </main><!--end container-->
+    <!------------------------JavaScript link------------------------->
+    <script src="js/script.js"></script>
+</body>
+</html>
